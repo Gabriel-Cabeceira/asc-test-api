@@ -73,27 +73,47 @@ server.get('/base64', async (req, res) => {
 
 // Rota teste que envia uma lista de objetos
 server.get('/objectsArray', async (req, res) => {
-  const array = [
+  const SE1 = [
     {
-      id: 1,
-      nome: 'Teste da Silva',
-      saldo: 3500
+      "E1_OPCAO": "01",
+      "E1_NUMBOR": "002807",
+      "E1_PREFIXO": "1",
+      "E1_NUM": "000033347",
+      "E1_PARCELA": "043",
+      "E1_VALOR": 26911.67,
+      "E1_VENCTO": "20231121",
+      "E1_TIPO": "NF"
     },
     {
-      id: 2,
-      nome: 'Batatinha',
-      saldo: 5
+      "E1_OPCAO": "02",
+      "E1_NUMBOR": "002807",
+      "E1_PREFIXO": "1",
+      "E1_NUM": "000033347",
+      "E1_PARCELA": "044",
+      "E1_VALOR": 26911.67,
+      "E1_VENCTO": "20231121",
+      "E1_TIPO": "NF"
     },
     {
-      id: 3,
-      nome: 'Tony Stark',
-      saldo: 1000000000
+      "E1_OPCAO": "03",
+      "E1_NUMBOR": "002807",
+      "E1_PREFIXO": "1",
+      "E1_NUM": "000033347",
+      "E1_PARCELA": "045",
+      "E1_VALOR": 26911.67,
+      "E1_VENCTO": "20231121",
+      "E1_TIPO": "NF"
     },
     {
-      id: 4,
-      nome: 'Goku',
-      saldo: 30000000000
-    }
+      "E1_OPCAO": "04",
+      "E1_NUMBOR": "002807",
+      "E1_PREFIXO": "1",
+      "E1_NUM": "000033347",
+      "E1_PARCELA": "046",
+      "E1_VALOR": 26911.67,
+      "E1_VENCTO": "20231121",
+      "E1_TIPO": "NF"
+    },
   ]
 
   return res.status(200).json({ data: array });
